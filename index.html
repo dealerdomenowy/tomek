@@ -1,0 +1,832 @@
+<html lang="pl"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Tomasz Mogieła - Rzetelny Doradca Kredytowy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+
+
+
+         <?php if(!isset($_COOKIE['IknowAboutCookie'])) { ?>
+<div id="hideMe" style="color: #b2b2b2; padding: 2px 0px; font-size: 12px; line-height: 22px; border-bottom: 0px solid #D3D0D0; text-align: center; position: relative; top: -14px; background-color: #2c2d31; width: 100%; z-index: 99999;">Niniejsza strona używa informacji zapisanych w postaci plików cookies. Korzystając z niej wyrażasz zgodę na ich wykorzystanie.<a href="cookies.pdf"> Dowiedz się więcej</a><button class="hilang" style="background-color: #4dbcf2; padding: 2px 9px; color: #FFF; border:none; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; display: inline-block; margin-left: 10px; text-decoration: none; cursor: pointer;" onclick="iKnowAboutIt();">OK, rozumiem</button></div>
+        <?php } ?>
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+            <div class="logo">
+             <div class="namefor"><a href="index.html"> <div class="imie">Tomasz</div>  <div class="nazwisko">Mogieła</div></div> </a>
+
+              <div class="podlo"><div class="rzetelny">Rzetelny</div> <div class="doradca">Doradca Kredytowy</div></div>
+
+            </div>
+
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <div class="lewo">
+            <li><a href="#proces">Proces kredytowy</a></li>
+            <li><a href="#korzysci">Korzyści</a></li>
+</div>
+           <li>
+<div class="pytanie">Masz pytania? Zadzwoń do mnie!</div>
+<div class="numer"><div class="prefiks">+48</div> 792.89.92.92</div>
+
+           </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+      </div>
+
+    </div>
+    <a id="form" href="#"></a>
+    <br>
+<div class="clear"></div>
+
+<div class="main ">
+    <div class="container">
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-8 tekst-niebieski">
+Potrzebujesz kredytu?
+<br><br>
+Szukasz nieruchomości<br>
+i bezpośredniego <br>
+kontaktu z jej <br>
+właścicielem? <br>
+<br>
+
+
+<div class="kwadrat">
+<a href="#cennnik" onClick="op('show-2'); ;"> </a>
+Zobacz jak <br>
+mogę Ci pomóc
+
+</div>
+
+
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+
+
+<div class="formularz" >
+
+  <div class="wypelnij">Wypełnij formularz</div>
+  <form action="send.php" method="POST">
+<input id="sayHello" type="text" maxlength="33" name="imie" placeholder="Imię i nazwisko" required><br>
+<input id="sayHello2" required type="phone"  onkeyup="this.value=this.value.replace(/\D/g,'')" maxlength="9" name="telefon" placeholder="Numer telefonu"><br>
+<input id="sayHello2" type="text" type="email" maxlength="33" name="mail" placeholder="Adres e-mail" required><br>
+
+<div class="checkpo"><input type="checkbox" id="f18" checked name="check1" required><div class="check"> Wyrażam zgodę na przetwarzanie moich danych <br>  osobowych zgodnie z zasadami określonymi <br> w <a href="regulamin.pdf">Regulaminie</a></div></div>
+
+<div class="clear"></div>
+<button name="name" value="value" type="submit">Wyślij zgłoszenie
+
+</button>
+</form>
+
+
+</div>
+
+</div>
+</div>
+    <a id="cennnik" href="#"></a>
+    </div> <!-- /container -->
+
+
+</div>
+
+<div class="clear"></div>
+  <a id="cennnik" href="#"></a>
+<div class="cennik">
+<div class="container">
+      <div class="col-md-12">
+
+          <div id="show-2" class="" style="display:none">
+
+
+		     <p><a href="/" onClick="op('show-2'); return false;" class="as">X </a></p>
+	 		<h1>Potrzebujesz kredytu? <b>Chętnie Ci pomogę!</b></h1>
+			<div class="clear"></div>
+		<div class="opis">  Porównam dla Ciebie <span class="blue">oferty 22 banków </span>i wskażę te, które są najbardziej korzystne. Zwrócę też
+
+Twoją uwagę na wszystkie wymagane przez bank produkty dodatkowe oraz na koszty jakie są z
+
+nimi związane tak, aby nic Cię ne zaskoczyło. Więcej o tym jak wygląda cały proces kredytowy i
+
+w czym mogę Ci pomóc na każdym z jego etapów możesz dowiedzieć się <span class="blue"><a href="#proces">tutaj >></a></span></div>
+		  	<div class="clear"></div>
+
+<h1>A może szukasz nieruchomości? Albo bezpośredniego kontaktu z właścicielem tej, która jest dla Ciebie odpowiednia? <b>Zaskoczę Cię swoją skutecznością!</b></h1>
+ 	<div class="clear"></div>
+ 	<div class="opis"> Przygotowałem dwa warianty, które różnią się zakresem mojej pomocy i są dostosowane do
+
+tego czego możesz potrzebować na swoim etapie poszukiwań. Jeśli masz inną propozycję
+
+skontaktuj się ze mną!</div>
+
+<div class="col-xs-12 col-md-6">   <h2> Wariant podstawowy</h2>
+<br>
+<div class="opis2">
+- przedstawię Ci ofertę konkretnej, wybranej przez Ciebie nieruchomości bezpośrednio od
+
+właściciela,
+<br><br>
+- będę reprezentował wyłącznie Twoją stronę i zobowiążę się do niepobierania
+
+wynagrodzenia od sprzedającego,
+<br><br>
+- na życzenie przygotuję odpowiednią argumentację do negocjacji cenowych i
+
+przeprowadzę je w Twoim imieniu.
+<br><br>
+<div class="price1"><div class="price">Cena: <span class="blue2">575,00 zł brutto</span></div> (plus 10% kwoty stanowiącej różnicę między ceną ofertową a ceną transakcyjną brutto w przypadku udziału w negocjacjach)</div>
+
+</div>
+</div>
+<div class="col-xs-12 col-md-6">      <h2> Wariant rozszerzony</h2>
+<br>
+<div class="opis2"> - wyselekcjonuję i przedstawię Ci oferty nieruchomości najbardziej odpowiadające
+
+Twoim, wcześniej omówionym wymaganiom,
+<br><br>
+- sprawdzę stan prawny wybranych nieruchomości,
+<br><br>
+- będę reprezentował wyłącznie Twoją stronę i zobowiążę się do niepobierania
+
+wynagrodzenia od sprzedającego,
+<br><br>
+- przygotuję odpowiednią argumentację i przeprowadzę negocjacje cenowe ze
+
+sprzedającym
+<br><br>
+- doprowadzę do zawarcia umowy przedwstępnej lub umowy przenoszącej własność
+
+wybranej nieruchomości
+<br><br>
+
+<div class="price">Cena: <span class="blue2">1475,00 zł</span></div> <span class="blue2">plus 10% kwoty stanowiącej różnicę między ceną ofertową a ceną transakcyjną brutto</span>
+
+
+
+	   </div> </div>
+              <br><br><br><br>
+              <div class="clear"></div>
+	  <div class="contactf">
+	  Zadzwoń do mnie albo
+
+	  <a href="#form"><button name="name" value="value" type="submit">Wyślij zgłoszenie</a>
+</button>
+	  a skontaktuję się z Tobą w ciągu 24 godzin!
+
+	      </div>
+          </div>
+
+       </div>
+</div>
+</div>
+
+
+<div class="tri">
+
+<div class="container">
+
+<div class="row">
+<div class="col-xs-12 col-md-4">
+<h1>FILOZOFIA</h1>
+Jestem przekonany, że każde nasze
+
+działanie powinno nieść ze sobą korzyści dla
+
+wszystkich jego uczestników i&nbsp;odbiorców,
+
+jednocześnie pozostając neutralne dla osób
+
+niezainteresowanych.
+<br>
+<br>
+W praktyce doradczej oznacza to wybór
+
+ofert jak najlepiej spełniających określone
+
+przez Ciebie wymogi tak, aby całkowita ich
+
+cena nie była większa niż to konieczne przy
+
+określonych kryteriach.
+<br>
+
+            <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-xs visible-sm hidden-md hidden-lg">
+
+
+        Korzyści drugiej strony umowy, czyli instytucji finansowej wynikają z odpowiedniego przygotowania oferty i wewnętrznej oceny jej opłacalności i nie wymagają dodatkowej troski. Uważam też, że moje własne korzyści wynikające z działań zgodnych z moimi przekonaniami i wartościami, w które wierzę w dłużej perspektywie okażą się więcej warte i dadzą mi zdecydowanie więcej satysfakcji.
+    </div>
+                 </div>
+
+<a id="hoverr" href="#dd" onClick="op('show-22'); hidd(); ;" >Czytaj więcej &raquo; </a>
+</div>
+
+<div class="col-xs-12 col-md-4">
+
+<h1>WARTOŚCI</h1>
+
+Wierzę, że dobre samopoczucie na co dzień,
+
+wewnętrzny spokój i szczęście w dużym
+
+stopniu zależy od satysfakcji z&nbsp;pracy jaką się
+
+wykonuje. Niezbędna do niej jest spójność
+
+między naszymi aktywnościami zawodowymi i
+
+wartościami, które są dla nas ważne.
+<br><br>
+Właśnie z tego powodu tak w pracy jak
+
+i w życiu prywatnym w takim samym stopniu
+
+stawiam na szczerość i uczciwość w&nbsp;budowanych relacjach.
+
+<br>
+
+                <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-xs visible-sm hidden-md hidden-lg">
+
+
+                        Za bardzo istotne we wzajemnych kontaktach uważam również szacunek i otwartość  ponieważ myślę, że to właśnie one są podstawą udanej komunikacji, dzięki której można lepiej zrozumieć potrzeby innych ludzi i ich punkt wiedzenia. Dużą wagę przywiązuję również do własnego rozwoju i podnoszenia swoich kwalifikacji ponieważ uważam, że jest to absolutnie konieczne aby móc wykonywać zawód doradcy kredytowego w sposób odpowiedzialny.
+    </div>
+                 </div>
+<a id="hoverrr" href="#dd" onClick="op('show-22'); hidd(); ;">Czytaj więcej &raquo; </a>
+
+
+</div>
+
+<div class="col-xs-12 col-md-4">
+
+<h1>ODPOWIEDZIALNOŚĆ</h1>
+
+Mam świadomość, że sposób prowadzenia
+
+wszelkiego rodzaju działalności gospodarczej
+
+ma wpływ na wielu ludzi a&nbsp;także na
+
+otaczający nas świat i jakość naszego życia.
+
+Wszyscy jesteśmy odpowiedzialni za te
+
+relacje i za skutki naszych codziennych
+
+działań.
+<br><br>
+Mając to na uwadze biorę odpowiedzialność
+
+za swoje decyzje i działania starając
+
+się zachować równowagę między sferą
+
+finansową, ludzką, społeczną i ich wpływem
+
+na...
+                        <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-xs visible-sm hidden-md hidden-lg">
+
+
+  …miedzy sferą finansową, ludzką, społeczną i ich wpływem na środowisko naturalne. Jestem przekonany, że świadomy, równomierny rozwój we wszystkich tych obszarach sprawi, że zajęcie, które dla siebie wybrałem będzie powodem mojego ogólnego zadowolenia i dumy.
+    </div>
+                 </div>
+    </div>
+
+
+
+
+ <a id="hoverrrr"  href="#dd" onClick="op('show-22'); hidd(); ;">Czytaj więcej &raquo; </a>
+    <div id="show-22" class="" style="display:none">
+
+            <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-lg visible-md hidden-xs hidden-sm" style="margin-left:15px;">
+<h1 class="hidden-md hidden-lg">FILOZOFIA</h1>
+
+        Korzyści drugiej strony umowy, czyli instytucji finansowej wynikają z odpowiedniego przygotowania oferty i wewnętrznej oceny jej opłacalności i nie wymagają dodatkowej troski. Uważam też, że moje własne korzyści wynikające z działań zgodnych z moimi przekonaniami i wartościami, w które wierzę w dłużej perspektywie okażą się więcej warte i dadzą mi zdecydowanie więcej satysfakcji.
+    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-lg visible-md hidden-xs hidden-sm" style="margin-left:-11px;">
+<h1 class="hidden-md hidden-lg">WARTOŚCI</h1>
+
+                Za bardzo istotne we wzajemnych kontaktach uważam również szacunek i otwartość  ponieważ myślę, że to właśnie one są podstawą udanej komunikacji, dzięki której można lepiej zrozumieć potrzeby innych ludzi i ich punkt wiedzenia. Dużą wagę przywiązuję również do własnego rozwoju i podnoszenia swoich kwalifikacji ponieważ uważam, że jest to absolutnie konieczne aby móc wykonywać zawód doradcy kredytowego w sposób odpowiedzialny.
+    </div>
+
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 visible-lg visible-md hidden-xs hidden-sm" style="margin-left:-11px;">
+
+<h1 class="hidden-md hidden-lg">ODPOWIEDZIALNOŚĆ</h1>
+
+  …miedzy sferą finansową, ludzką, społeczną i ich wpływem na środowisko naturalne. Jestem przekonany, że świadomy, równomierny rozwój we wszystkich tych obszarach sprawi, że zajęcie, które dla siebie wybrałem będzie powodem mojego ogólnego zadowolenia i dumy.
+    </div>
+  </div>
+        <div class="clear"></div>
+        <div class="cenkwad">
+<div id="newkwad" class="kwadrat">
+<a onclick="viss(); op('show-22'); return false;" class="as"> </a>
+Zamknij
+
+</div>
+            </div>
+    </div>
+
+</div>
+
+</div>
+<a id="proces" href="#"></a>
+<br>
+</div>
+
+
+<div class="proces">
+
+<div class="container">
+
+<h1>Proces kredytowy</h1>
+<div class="row">
+<div class="col-xs-12">
+  <img src="img/proces.png" class="hidden-xs img-responsive hidden-sm">
+  <img src="img/proces.png" class="hidden-lg hidden-md img-responsive">
+
+  </div>
+  </div>
+<a id="korzysci" href="#"></a>
+</div>
+
+</div>
+
+<div class="duo">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-xs-12 col-md-6"><h1>Korzyści</h1>
+<div class="clear"></div>
+
+
+<div class="korzyscog">
+
+<div class="korzysc"><img src="img/ok.png"><div class="tekst-duo">
+Uzyskasz pomoc przy wyszukiwaniu odpowiedniej <br>
+nieruchomości a także w bezpośrednim <br>
+skontaktowaniu się z jej właścicielem <br>
+</div>
+</div>
+<div class="clear"></div>
+
+<div class="korzysc"><img src="img/ok.png"><div class="tekst-duo">
+Obiżysz koszty transakcyjne ponieważ otrzymasz <br>
+ możliwość skorzystania z usłgu współracujących <br>
+ ze mną rzeczoznawców majątkowych i notariuszy.
+</div></div>
+<div class="clear"></div>
+<div class="korzysc"><img src="img/ok.png"><div class="tekst-duo">
+Oszczędzisz swój czas dzięki mojej pomocy przy <br>
+kompletowaniu niezbędnej dokumenacji oraz <br>
+dostarczaniu jej do wybranych odziałów <br>
+</div></div>
+</div>
+
+
+</div>
+<div class="col-xs-12 col-md-6"><h1>Referencje</h1>
+<div class="clear"></div>
+
+<div id="tabs">
+   <div class="clear"></div>
+
+  <div id="tabs-1">
+   <h1>Tomasz Rymarczuk (inżynier telekomunikacji)</h1>
+<div class="clear"></div>
+"Pan Mogieła jest bardzo skrupulatny i nakierowany na wyszukanie oferty najkorzystniejszej dla klienta. Pomógł mi uzyskać kredyt hipoteczny na bardzo atrakcyjnych warunkach, który nie był dostępny u dużych, popularnych firm doradztwa finansowego. Zapewnił przy tym kompleksową pomoc we wszelkich formalnościach aż do całkowitego zakończenia procesu. Jest osobą bardzo pozytywną, otwartą i chętną do pomocy. Zdecydowanie polecam korzystanie z jego usług."
+  </div>
+    <div class="clear"></div>
+  <div id="tabs-2">
+     <h1> Marcin Bednarek (grafik)</h1>
+<div class="clear"></div>
+"Profesjonalna obsługa doradcza począwszy od analizy oferty kredytowej wszystkich banków, dobór oferty pod konkretne wymagania klienta (w moim przypadku skomplikowana sytuacja zadłużonego mieszkania i różnego rodzaju dochody z wielu źródeł), poprzez całe zamieszanie z gromadzeniem dokumentów i dostarczanie ich konkretnym bankom, aż po końcowe odebranie odpisu księgi wieczystej z sądu i dostarczenie do banku – potrzebujesz kredytu, zgłoś się do Tomka, a wszystko załatwi za Ciebie…"
+  </div>
+    <div class="clear"></div>
+  <div id="tabs-3">
+   <h1>Tomasz Rymarczuk (inżynier telekomunikacji)</h1>
+<div class="clear"></div>
+"Pan Mogieła jest bardzo skrupulatny i nakierowany na wyszukanie oferty najkorzystniejszej dla klienta. Pomógł mi uzyskać kredyt hipoteczny na bardzo atrakcyjnych warunkach, który nie był dostępny u dużych, popularnych firm doradztwa finansowego. Zapewnił przy tym kompleksową pomoc we wszelkich formalnościach aż do całkowitego zakończenia procesu. Jest osobą bardzo pozytywną, otwartą i chętną do pomocy. Zdecydowanie polecam korzystanie z jego usług."
+  </div>
+    <div class="clear"></div>
+    <div id="tabs-4">
+     <h1> Marcin Bednarek (grafik)</h1>
+<div class="clear"></div>
+"Profesjonalna obsługa doradcza począwszy od analizy oferty kredytowej wszystkich banków, dobór oferty pod konkretne wymagania klienta (w moim przypadku skomplikowana sytuacja zadłużonego mieszkania i różnego rodzaju dochody z wielu źródeł), poprzez całe zamieszanie z gromadzeniem dokumentów i dostarczanie ich konkretnym bankom, aż po końcowe odebranie odpisu księgi wieczystej z sądu i dostarczenie do banku – potrzebujesz kredytu, zgłoś się do Tomka, a wszystko załatwi za Ciebie…"
+  </div>
+      <div class="clear"></div>
+    <div id="tabs-5">
+   <h1>Tomasz Rymarczuk (inżynier telekomunikacji)</h1>
+<div class="clear"></div>
+"Pan Mogieła jest bardzo skrupulatny i nakierowany na wyszukanie oferty najkorzystniejszej dla klienta. Pomógł mi uzyskać kredyt hipoteczny na bardzo atrakcyjnych warunkach, który nie był dostępny u dużych, popularnych firm doradztwa finansowego. Zapewnił przy tym kompleksową pomoc we wszelkich formalnościach aż do całkowitego zakończenia procesu. Jest osobą bardzo pozytywną, otwartą i chętną do pomocy. Zdecydowanie polecam korzystanie z jego usług."
+  </div>
+    <div class="clear"></div>
+  <ul>
+    <li><a href="#tabs-1"></a></li>
+    <li><a href="#tabs-2"></a></li>
+    <li><a href="#tabs-3"></a></li>
+    <li><a href="#tabs-4"></a></li>
+    <li><a href="#tabs-5"></a></li>
+      <div class="clear"></div>
+  </ul>
+  <div class="clear"></div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wyslijform ">
+<div class="container">
+
+<a href="#form"><button name="name" value="value" type="submit">Wypełnij formularz</a>
+</button>
+</div>
+
+</div>
+<div class="clear"></div>
+<div class="partners">
+<div class="container">
+  <h1>Partnerzy</h1>
+  <div class="clear"></div>
+
+  <div id="prezentacja">
+<div id="lewa"><a href="javascript:slide('left');"><img src="img/left-arrow.png"></a></div>
+<div id="slider">
+<ul id="slider_lista">
+<li><div>Alior Bank</div></li>
+<li><div>Bank Pocztowy</div></li>
+<li><div>BGŻ</div></li>
+<li><div>BNP Paribas</div></li>
+<li><div>BOŚ</div></li>
+<li><div>BZ WBK</div></li>
+<li><div>BPH</div></li>
+<li><div>Citi Handlowy</div></li>
+<li><div>Credit Agricole</div></li>
+<li><div>Deutsche Bank</div></li>
+<li><div>Eurobank</div></li>
+<li><div>Getin Noble Bank</div></li>
+<li><div>Idea Bank</div></li>
+<li><div>ING Bank Śląski</div></li>
+<li><div>mBank</div></li>
+<li><div>mBank Hipoteczny</div></li>
+<li><div>Meritum Bank</div></li>
+<li><div>Millennium</div></li>
+<li><div>Pekao</div></li>
+<li><div>PKO Bank Polski</div></li>
+<li><div>Plus Bank</div></li>
+<li><div>Raiffeisen</div></li>
+</ul></div>
+<div id="prawa"><a href="javascript:slide('right');"><img src="img/right-arrow.png"></a></div>
+<input type="hidden" id="hidden_auto_slide_seconds" value=0 />
+</div>
+
+
+</div>
+</div>
+<div class="clear"></div>
+<footer>
+
+  <div class="container">
+<div class="kontakt">
+
+<div class="row">
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+
+
+
+<div class="copy">
+Copyright © 2014  Tomasz Mogieła | <a href="regulamin.pdf">Regulamin</a> & <a href="cookies.pdf">Pliki cookie</a>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+<div class="mail">
+<img src="img/footmail.png" class="mail-foot"> kredyty@mogiela.pl
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+<div class="phone">
+<img src="img/footphone.png" class="phone-foot"> +48 792.89.92.92
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+
+
+
+      <script type="text/javascript">
+	function iKnowAboutIt() {
+		var expire = new Date()
+		expire.setMonth(expire.getMonth()+6)
+		document.cookie = "IknowAboutCookie" + "=" + "set" + "; expires=" + expire;
+		document.getElementById('hideMe').style.display='none';
+	}
+</script>
+
+            <script type="text/javascript">
+	function hidd() {
+
+		document.getElementById('hoverr').style.display='none';
+        document.getElementById('hoverrr').style.display='none';
+        document.getElementById('hoverrrr').style.display='none';
+	}
+</script>
+
+                  <script type="text/javascript">
+	function viss() {
+
+		document.getElementById('hoverr').style.display='block';
+        document.getElementById('hoverrr').style.display='block';
+        document.getElementById('hoverrrr').style.display='block';
+	}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+      <script>
+  function op(obj) {
+  x=document.getElementById(obj);
+  if(x.style.display == "none") x.style.display = "block";
+  else x.style.display = "none"
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+        //opcje( 1 - włączony , 0 - wyłączony)
+        var auto_slide = 1;
+            var hover_pause = 1;
+        var key_slide = 1;
+
+        //prędkość przewijania
+        var auto_slide_seconds = 5000;
+        //UWAGA: wartości czasowe podajemy w milisekundach
+
+        //przesuń obiekt z ostatniego miejsca na miejsce przed pierwszym. Chodzi o to, żeby użytkownik widział wszystkie pozycje ze slidera bez przerwy.
+        $('#slider_lista li:first').before($('#slider_lista li:last'));
+
+        //sprawdzenie czy auto-sliding jest włączony
+        if(auto_slide == 1){
+            var timer = setInterval('slide("right")', auto_slide_seconds);
+            $('#hidden_auto_slide_seconds').val(auto_slide_seconds);
+        }
+
+        //sprawdzenie czy pauza w efekcie hover jest włączona
+        if(hover_pause == 1){
+            $('#slider_lista').hover(function(){
+                //zatrzymanie przesuwania gdy :hover
+                clearInterval(timer)
+            },function(){
+                //włączenie ruchu
+                timer = setInterval('slide("right")', auto_slide_seconds);
+            });
+
+        }
+
+        //sprawdzenie czy obsługa klawiszy jest włączona
+        if(key_slide == 1){
+
+            //ustawianie przycisków do interakcji
+            $(document).bind('keypress', function(e) {
+                //kod przycisku "strzałka w lewo" to: 37, a "strzałka w prawo" to: 39
+                if(e.keyCode==37){
+                        //przesuń w lewo
+                        slide('left');
+                }else if(e.keyCode==39){
+                        //przesuń w prawo
+                        slide('right');
+                }
+            });
+        }
+  });
+
+//funkcja przesuwania
+function slide(where){
+
+            //pobieranie szerokości pojedynczego obiektu
+            var item_width = $('#slider_lista li').outerWidth() + 10;
+
+            //sprawdzenie czy animacja ma iść w prawo czy w lewo
+            if(where == 'left'){
+                //kalkulacja ruchu w lewo
+                var left_indent = parseInt($('#slider_lista').css('left')) + item_width;
+            }else{
+                //kalkulacja ruchu w prawo
+                var left_indent = parseInt($('#slider_lista').css('left')) - item_width;
+
+            }
+
+            //efekt przesuwania z użyciem biblioteki jQuery
+            $('#slider_lista:not(:animated)').animate({'left' : left_indent},500,function(){
+
+                //tworzenie iluzji nieskończonej prezentacji
+                if(where == 'left'){
+                    $('#slider_lista li:first').before($('#slider_lista li:last'));
+                }else{
+                    $('#slider_lista li:last').after($('#slider_lista li:first'));
+                }
+
+                $('#slider_lista').css({'left' : '-90px'});
+            });
+}
+</script>
+<script type="text/javascript">
+//this is the plugin
+;(function($){
+  $.extend( $.ui.tabs.prototype, {
+    rotation: null,
+    rotationDelay: null,
+    continuing: null,
+    rotate: function( ms, continuing ) {
+      var self = this,
+        o = this.options;
+
+      if((ms > 1 || self.rotationDelay === null) && ms !== undefined){//only set rotationDelay if this is the first time through or if not immediately moving on from an unpause
+        self.rotationDelay = ms;
+      }
+
+      if(continuing !== undefined){
+        self.continuing = continuing;
+      }
+
+      var rotate = self._rotate || ( self._rotate = function( e ) {
+        clearTimeout( self.rotation );
+        self.rotation = setTimeout(function() {
+          var t = o.selected;
+          self.select( ++t < self.anchors.length ? t : 0 );
+        }, ms );
+
+        if ( e ) {
+          e.stopPropagation();
+        }
+      });
+
+      var stop = self._unrotate || ( self._unrotate = !continuing
+        ? function(e) {
+          if (e.clientX) { // in case of a true click
+            self.rotate(null);
+          }
+        }
+        : function( e ) {
+          t = o.selected;
+          rotate();
+        });
+
+      // start rotation
+      if ( ms ) {
+        this.element.bind( "tabsshow", rotate );
+        this.anchors.bind( o.event + ".tabs", stop );
+        rotate();
+      // stop rotation
+      } else {
+        clearTimeout( self.rotation );
+        this.element.unbind( "tabsshow", rotate );
+        this.anchors.unbind( o.event + ".tabs", stop );
+        delete this._rotate;
+        delete this._unrotate;
+      }
+
+      //rotate immediately and then have normal rotation delay
+      if(ms === 1){
+        //set ms back to what it was originally set to
+        ms = self.rotationDelay;
+      }
+
+      return this;
+    },
+    pause: function() {
+      var self = this,
+        o = this.options;
+
+      self.rotate(0);
+    },
+    unpause: function(){
+      var self = this,
+        o = this.options;
+
+      self.rotate(1, self.continuing);
+    }
+  });
+})(jQuery);
+
+
+//this is the implementation, the only line of code you need too write
+$("#tabs").tabs().tabs("rotate", 5500, true);
+
+
+</script>
+
+<script type="text/javascript">
+$(function(){
+ var shrinkHeader = 300;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.navbar-default').addClass('shrink');
+        }
+        else {
+            $('.navbar-default').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset;
+    }
+});
+
+</script>
+    <script type="text/javascript" src="js/livevalidation_standalone.compressed.js"></script>
+    <script type="text/javascript">
+		            var sayHello = new LiveValidation('sayHello', { validMessage: ' ', wait: 500});
+		            sayHello.add(Validate.Presence, {failureMessage: " "});
+
+		          </script>
+
+       <script type="text/javascript">
+		            var sayHello = new LiveValidation('saayHello2', { validMessage: ' ', wait: 500});
+		            sayHello.add(Validate.Presence, {failureMessage: " "});
+
+		          </script>
+
+        <script type="text/javascript">
+		            var sayHello = new LiveValidation('sayHello2', { validMessage: ' ', wait: 500});
+		            sayHello.add(Validate.Presence, {failureMessage: " "});
+
+		          </script>
+        <script type="text/javascript">
+		            var sayHello = new LiveValidation('sayHelloo', { validMessage: ' ', wait: 500});
+		            sayHello.add(Validate.Presence, {failureMessage: " "});
+
+		          </script>
+    <script>    var f18 = new LiveValidation('f18');
+f18.add( Validate.Acceptance );</script>
+
+    <script>
+        var f20 = new LiveValidation('f20');
+f20.add( Validate.Email );
+
+    </script>
+</body></html>
