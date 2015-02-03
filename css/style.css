@@ -862,7 +862,7 @@ font-family: 'Source Sans Pro', sans-serif;
     color:#4dbcf2;
 }
 
-.wyslijform button[type="submit"]{
+.wyslijform button {
 	margin-top: 20px;
 	max-width: 300px;
 	padding-left: 30px;
