@@ -29,12 +29,6 @@
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-
-
-
-         <?php if(!isset($_COOKIE['IknowAboutCookie'])) { ?>
-<div id="hideMe" style="color: #b2b2b2; padding: 2px 0px; font-size: 12px; line-height: 22px; border-bottom: 0px solid #D3D0D0; text-align: center; position: relative; top: -14px; background-color: #2c2d31; width: 100%; z-index: 99999;">Niniejsza strona używa informacji zapisanych w postaci plików cookies. Korzystając z niej wyrażasz zgodę na ich wykorzystanie.<a href="cookies.pdf"> Dowiedz się więcej</a><button class="hilang" style="background-color: #4dbcf2; padding: 2px 9px; color: #FFF; border:none; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; display: inline-block; margin-left: 10px; text-decoration: none; cursor: pointer;" onclick="iKnowAboutIt();">OK, rozumiem</button></div>
-        <?php } ?>
       <div class="container">
 
         <div class="navbar-header">
@@ -564,18 +558,6 @@ Copyright © 2014  Tomasz Mogieła | <a href="regulamin.pdf">Regulamin</a> & <a 
     <!-- Placed at the end of the document so the pages load faster -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-
-
-
-
-      <script type="text/javascript">
-	function iKnowAboutIt() {
-		var expire = new Date()
-		expire.setMonth(expire.getMonth()+6)
-		document.cookie = "IknowAboutCookie" + "=" + "set" + "; expires=" + expire;
-		document.getElementById('hideMe').style.display='none';
-	}
-</script>
 
             <script type="text/javascript">
 	function hidd() {
